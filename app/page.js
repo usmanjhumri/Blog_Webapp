@@ -7,7 +7,7 @@ import { ThemeContext } from "./context/ThemeContext";
 const Home = memo(({ hamburger }) => {
   const [sidebaropen, setSidebaropen] = useState(false);
 
-  const { toggle, theme } = useContext(ThemeContext);
+  const { theme } = useContext(ThemeContext);
 
   const handleSidebarMenu = () => {
     setSidebaropen(!sidebaropen);
