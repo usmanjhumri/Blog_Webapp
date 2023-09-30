@@ -9,6 +9,8 @@ const Home = memo(({ hamburger }) => {
 
   const { theme } = useContext(ThemeContext);
 
+  console.log(theme, " THEME");
+
   const handleSidebarMenu = () => {
     setSidebaropen(!sidebaropen);
   };
